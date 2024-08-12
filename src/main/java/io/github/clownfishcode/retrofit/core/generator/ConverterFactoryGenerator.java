@@ -1,5 +1,6 @@
 package io.github.clownfishcode.retrofit.core.generator;
 
+import io.github.clownfishcode.retrofit.core.Generator;
 import io.github.clownfishcode.retrofit.core.builder.BaseConverterFactoryBuilder;
 import retrofit2.Converter;
 

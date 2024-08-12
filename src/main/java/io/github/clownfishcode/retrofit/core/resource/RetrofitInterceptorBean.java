@@ -10,15 +10,15 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public final class RetrofitInterceptorBean implements UniqueKey {
-    private Class<? extends BaseInterceptor> handler;
+    private final Class<? extends BaseInterceptor> handler;
 
     private InterceptorType type;
 
-    private String[] include;
+    private final String[] include;
 
-    private String[] exclude;
+    private final String[] exclude;
 
-    private int sort;
+    private final int sort;
 
 
     public RetrofitInterceptorBean(RetrofitInterceptor retrofitInterceptor, RetrofitInterceptorParam retrofitInterceptorParam) {

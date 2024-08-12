@@ -18,7 +18,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Create a retrofit object with the same HostURL. Therefore, the interceptor will overwrite the URL every time it requests to fill in the prefix part of the URL
+ * The core functions of the interceptor
+ * Create a retrofit object with the same HostURL
+ * Therefore, the interceptor will overwrite the URL every time it requests to fill in the prefix part of the URL
  *
  * @author liuziyuan
  */

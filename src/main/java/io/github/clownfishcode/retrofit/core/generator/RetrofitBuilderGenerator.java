@@ -1,6 +1,7 @@
 package io.github.clownfishcode.retrofit.core.generator;
 
 import io.github.clownfishcode.retrofit.core.CDIBeanManager;
+import io.github.clownfishcode.retrofit.core.Generator;
 import io.github.clownfishcode.retrofit.core.RetrofitResourceContext;
 import io.github.clownfishcode.retrofit.core.annotation.InterceptorType;
 import io.github.clownfishcode.retrofit.core.builder.*;

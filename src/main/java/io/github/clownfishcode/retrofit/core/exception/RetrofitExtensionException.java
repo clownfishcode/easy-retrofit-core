@@ -4,6 +4,10 @@ package io.github.clownfishcode.retrofit.core.exception;
 import io.github.clownfishcode.retrofit.core.resource.RetrofitApiServiceBean;
 import okhttp3.Request;
 
+/**
+ * Easy Retrofit Extension Exception, when extension exception occurred, it needs throw this exception.
+ * @author liuziyuan
+ */
 public class RetrofitExtensionException extends RuntimeException {
 
     protected final RetrofitApiServiceBean retrofitApiServiceBean;

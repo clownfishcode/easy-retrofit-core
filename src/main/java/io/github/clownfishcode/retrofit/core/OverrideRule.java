@@ -1,5 +1,10 @@
 package io.github.clownfishcode.retrofit.core;
 
+/**
+ * RetrofitBuilder override rule enum
+ *
+ * @author liuziyuan
+ */
 public enum OverrideRule {
 
 
@@ -13,7 +18,7 @@ public enum OverrideRule {
     GLOBAL_FIRST,
 
     /**
-     * if MERGE, merge global and local resource
+     * if MERGE, merge global and local resource, base on local resource, if not found, merge global resource to local resource
      */
     MERGE,
     /**

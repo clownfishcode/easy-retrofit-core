@@ -21,7 +21,7 @@ public final class RetrofitClientBean implements UniqueKey {
     private String realHostUrl;
     private UrlStatus urlStatus;
     private RetrofitBuilderBean retrofitBuilder;
-    private Set<RetrofitInterceptorBean> interceptors;
+    private final Set<RetrofitInterceptorBean> interceptors;
     //    private Set<RetrofitInterceptorBean> inheritedInterceptors;
     private List<RetrofitApiServiceBean> retrofitApiServiceBeans;
 

@@ -10,12 +10,11 @@ import java.util.*;
  * @author liuziyuan
  */
 public class RetrofitResourceContextBuilder {
-    private String[] basePackages;
     private final List<RetrofitClientBean> retrofitClientBeanList;
     private final List<RetrofitApiServiceBean> retrofitApiServiceBeanList;
     private final Map<String, RetrofitApiServiceBean> retrofitServiceBeanHashMap;
     private Class<?> retrofitBuilderExtensionClazz;
-    private List<Class<?>> interceptorExtensionsClasses;
+    private final List<Class<?>> interceptorExtensionsClasses;
     private final EnvManager envManager;
 
     public RetrofitResourceContextBuilder(EnvManager envManager) {
@@ -31,14 +30,13 @@ public class RetrofitResourceContextBuilder {
                                                         RetrofitBuilderExtension globalRetrofitBuilderExtension,
                                                         List<RetrofitInterceptorExtension> interceptorExtensions,
                                                         EnvManager envManager) {
-        this.basePackages = basePackages;
         setRetrofitServiceBeanList(retrofitBuilderClassSet, globalRetrofitBuilderExtension, interceptorExtensions);
         setRetrofitClientBeanList();
         setRetrofitServiceBeanHashMap();
 
         setRetrofitBuilderExtensionClazz(globalRetrofitBuilderExtension);
         setInterceptorExtensionsClasses(interceptorExtensions);
-        return new RetrofitResourceContext(this.basePackages,
+        return new RetrofitResourceContext(basePackages,
                 retrofitClientBeanList, retrofitServiceBeanHashMap, retrofitBuilderExtensionClazz, interceptorExtensionsClasses, envManager);
     }
 

@@ -65,8 +65,6 @@ public final class RetrofitBuilderBean implements UniqueKey {
     /**
      * if merge, default date is local_first, then merge global CallAdapterFactory and ConverterFactory to local_first
      *
-     * @param retrofitBuilderAnnotation
-     * @param globalRetrofitBuilderExtension
      */
     private void setRetrofitBuilderBeanByMerge(RetrofitBuilder retrofitBuilderAnnotation, RetrofitBuilderExtension globalRetrofitBuilderExtension) {
         this.setEnable(true);

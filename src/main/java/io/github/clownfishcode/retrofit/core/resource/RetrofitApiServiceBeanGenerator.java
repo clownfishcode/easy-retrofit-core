@@ -4,8 +4,8 @@ import io.github.clownfishcode.retrofit.core.EnvManager;
 import io.github.clownfishcode.retrofit.core.RetrofitBuilderExtension;
 import io.github.clownfishcode.retrofit.core.RetrofitInterceptorExtension;
 import io.github.clownfishcode.retrofit.core.annotation.*;
-import io.github.clownfishcode.retrofit.core.exception.RetrofitStarterException;
-import io.github.clownfishcode.retrofit.core.generator.Generator;
+import io.github.clownfishcode.retrofit.core.exception.RetrofitBaseException;
+import io.github.clownfishcode.retrofit.core.Generator;
 import io.github.clownfishcode.retrofit.core.util.ReflectUtils;
 
 import java.lang.annotation.Annotation;
@@ -129,7 +129,7 @@ public class RetrofitApiServiceBeanGenerator implements Generator<RetrofitApiSer
                 targetClazz = findParentRetrofitBuilderClazz(interfaces[0]);
             } else {
                 if (clazz.getDeclaredAnnotation(RetrofitBase.class) == null) {
-                    throw new RetrofitStarterException("The baseApi of @RetrofitBase in the [" + clazz.getSimpleName() + "] Interface, does not define @RetrofitBuilder");
+                    throw new RetrofitBaseException("The baseApi of @RetrofitBase in the [" + clazz.getSimpleName() + "] Interface, does not define @RetrofitBuilder");
                 }
             }
         }

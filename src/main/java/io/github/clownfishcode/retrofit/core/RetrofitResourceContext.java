@@ -65,7 +65,7 @@ public class RetrofitResourceContext {
         return retrofitBuilderExtensionClazz;
     }
 
-    public EnvManager getEnv() {
+    public EnvManager getEnvManger() {
         return envManager;
     }
 }

@@ -1,6 +1,6 @@
 package io.github.clownfishcode.retrofit.core.resource;
 
-import io.github.clownfishcode.retrofit.core.generator.Generator;
+import io.github.clownfishcode.retrofit.core.Generator;
 
 import java.util.List;
 

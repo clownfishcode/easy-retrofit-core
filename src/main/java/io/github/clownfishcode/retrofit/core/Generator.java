@@ -1,7 +1,7 @@
-package io.github.clownfishcode.retrofit.core.generator;
+package io.github.clownfishcode.retrofit.core;
 
 /**
- * Generate interface used internally
+ * used internally, when you want to generate a complex object.
  * @author liuziyuan
  */
 public interface Generator<T> {

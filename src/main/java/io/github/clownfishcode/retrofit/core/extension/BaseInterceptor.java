@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 import java.util.Objects;
 
 /**
- * Abstract class of Interceptor, The custom interceptor needs to inherit it
+ * Abstract class of Interceptor, The inner interceptor needs to inherit it
  *
  * @author liuziyuan
  */
