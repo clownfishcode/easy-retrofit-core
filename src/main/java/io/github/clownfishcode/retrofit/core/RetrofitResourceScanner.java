@@ -52,7 +52,6 @@ public class RetrofitResourceScanner {
         while (iterator.hasNext()) {
             Class<?> clazz = iterator.next();
             if (!clazz.isInterface()) {
-                // 使用iterator的remove方法安全地移除元素
                 iterator.remove();
                 log.warn("[{}] requires an interface type", clazz.getName());
             }
